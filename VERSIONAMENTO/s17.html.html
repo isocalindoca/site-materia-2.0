@@ -11,18 +11,42 @@
         <h1></h1>
         <p></p>
 
-    <h2>1.</h2>
-    <p></p>
+    <h2>1.Uso adequado das branches</h2>
+    <p>O uso adequado das branches em versionamento é essencial para manter um fluxo de trabalho eficiente e organizado no desenvolvimento de software. 
+        Branch Principal (Main ou Master): Deve conter o código estável e pronto para produção. É a base para outras branches e deve ser mantida sempre funcional.
+<h3>1.Branch de Desenvolvimento (Develop):</h3>
+ Usada para integrar novas funcionalidades e correções antes de serem liberadas para produção. Serve como um espaço intermediário para testes e integração.
+<h3>2.Branches de Funcionalidade (Feature Branches):</h3>
+ Criadas para desenvolver novas funcionalidades. Devem ser derivadas da branch de desenvolvimento e, após a finalização, integradas de volta a ela.
+<h3>3.Branches de Correção (Bugfix Branches):</h3>
+Usadas para corrigir erros encontrados durante o desenvolvimento. São criadas a partir da branch de desenvolvimento ou da branch principal, dependendo do contexto.
+<h3>4.Branches de Release:</h3>
+Facilitam o processo de preparação para um lançamento, permitindo testes e ajustes finais sem interromper o desenvolvimento contínuo. São criadas a partir da branch de desenvolvimento e, após os testes, mescladas na branch principal.
+<h3>5.Branches de Hotfix:</h3>
+Usadas para correções rápidas em produção. São criadas a partir da branch principal e depois integradas tanto na branch principal quanto na branch de desenvolvimento.</p>
 
-    <h2>2.</h2>
-    <p></p>
+    <h2>2.Manter as branches atualizadas</h2>
+    <p>Manter as branches atualizadas é fundamental para evitar conflitos e garantir que o desenvolvimento flua de maneira suave.</p>
+<h3>1.Fazer pull frequentemente:</h3>
+ Baixar as últimas alterações da branch principal (geralmente "main" ou "master") para evitar conflitos quando for integrar o seu código.
+<h3>2.Rebase ou merge:</h3>
+Realizar um rebase ou merge com a branch principal para garantir que seu trabalho se ajuste corretamente às mudanças mais recentes.</h3>    
+<h3>3.Evitar divergências:</h3>
+Manter as branches atualizadas minimiza a possibilidade de conflitos e divergências de código, facilitando o processo de integração contínua.</h3>
+    <h2>3.Comunicação entre os membros da equipe </h2>
+    <p>A comunicação entre os membros da equipe é essencial no versionamento de código para garantir que todos estejam alinhados quanto ao progresso, mudanças e decisões relacionadas ao projeto.</p>
+<h3>1.Informar sobre alterações:</h3>
+Compartilhar informações sobre quais funcionalidades ou correções estão sendo desenvolvidas e em qual branch, para evitar trabalho duplicado ou conflitos.</h3>
+<h3>2.Definir convenções:</h3>
+Acordar convenções para o nome de branches, mensagens de commit e padrões de trabalho, facilitando a organização do código e o entendimento entre os membros.</h3>
+<h3>3.Resolução de conflitos:</h3>
+Colaborar na resolução de conflitos de merge e discutir decisões críticas que afetam a arquitetura ou funcionalidades do software.</h3>
+<h3>4.Ferramentas de comunicação:</h3>
+Utilizar ferramentas como chats, issue trackers e pull requests para manter a equipe informada e garantir que as revisões de código sejam claras e transparentes.</h3>
 
-    <h2>3.</h2>
-    <p></p>
-
-    <h2>4.</h2>
-    <p></p>
-
+    <h2>4.Resolução manual de conflitos e ferramentas de merge </h2>
+    <p>Ocorre quando duas ou mais versões de um arquivo são modificadas em paralelo, e o sistema de controle de versão (como Git) não consegue determinar automaticamente como combinar essas mudanças. Nesses casos, os desenvolvedores precisam revisar manualmente o código, identificando e decidindo como combinar as alterações conflitantes, garantindo que as funcionalidades esperadas sejam preservadas.</p>
+    As ferramentas de merge auxiliam nesse processo, fornecendo uma interface visual para comparar as diferentes versões de um arquivo (geralmente três versões: a base, a versão local e a versão remota) e permitir que o desenvolvedor escolha ou edite o conteúdo para resolver o conflito. Ferramentas como Git, GitKraken, KDiff3, Beyond Compare e Meld
    </div>
 <a href="../index.html">Voltar página inicial</a>
 </body>
